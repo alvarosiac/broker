@@ -1,11 +1,10 @@
-const express = require("express");
-const app = express();
+const aedes = require("aedes")();
+const httpServer = require("http").createServer();
+const ws = require("websocket-stream");
+const port = process.env.PORT || 80;
 
-const port = process.env.PORT || 4000;
+ws.createServer({ server: httpServer }, aedes.handle);
 
-app.listen(port);
-
-app.get("/", (req, res) => {
-  res.send("La aplicación comenzo");
+httpServer.listen(port1, () => {
+  console.log("websocket ", port);
 });
-console.log(`listen to ${port}`);
