@@ -6,5 +6,5 @@ const port = process.env.PORT || 80;
 ws.createServer({ server: httpServer }, aedes.handle);
 
 httpServer.listen(port, (request, response) => {
-  response.end(`Puerto ${port}`);
+  response.start(`Puerto ${port}`);
 });
