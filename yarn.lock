@@ -32,6 +32,22 @@ aedes-persistence@^9.1.2:
     aedes-packet "^3.0.0"
     qlobber "^7.0.0"
 
+aedes-protocol-decoder@^2.0.1:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/aedes-protocol-decoder/-/aedes-protocol-decoder-2.2.0.tgz#476351612f76dc77d24929e8a29f0cd5434a22e6"
+  integrity sha512-VeYR3Gx8KQ+VP/yX1hArwxoBeZJ3wPEg0LoLWfv6qfL/7RkClcxfOumV3nW2gCYs1a/0EMxpooZjn2nhfyFlxA==
+  dependencies:
+    forwarded "^0.2.0"
+    proxy-protocol-js "^4.0.6"
+
+aedes-server-factory@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/aedes-server-factory/-/aedes-server-factory-0.2.1.tgz#4514bd33c249d7dcab41b1946fc80bd9026fe8d6"
+  integrity sha512-pVN5pKyi1UDZRU5DFbL/OnrMmd9xmOfAJ+NqG60mUrTt5nL2ERMJ9j/Of5MrKINz/YH7vctJ8UIhxlVj4zJyKQ==
+  dependencies:
+    aedes-protocol-decoder "^2.0.1"
+    ws "^7.5.0"
+
 aedes@^0.50.1:
   version "0.50.1"
   resolved "https://registry.yarnpkg.com/aedes/-/aedes-0.50.1.tgz#42b65f0c81e9290db47022e0da5e5092ea5f05f0"
@@ -308,7 +324,7 @@ finalhandler@1.2.0:
     statuses "2.0.1"
     unpipe "~1.0.0"
 
-forwarded@0.2.0:
+forwarded@0.2.0, forwarded@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/forwarded/-/forwarded-0.2.0.tgz#2269936428aad4c15c7ebe9779a84bf0b2a81811"
   integrity sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow==
@@ -534,6 +550,11 @@ proxy-addr@~2.0.7:
   dependencies:
     forwarded "0.2.0"
     ipaddr.js "1.9.1"
+
+proxy-protocol-js@^4.0.6:
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/proxy-protocol-js/-/proxy-protocol-js-4.0.6.tgz#6214013341c41ccf2e0ba20a2f5afbf2cdb032de"
+  integrity sha512-SjXgyBmr0dBbKUZ0jOzp0N9urTcDOI1cd1oEeE43W1vG4OMwYYLggCRcMJ0zv0gdTA8Imb4cAiYj8Ic/PWv1mw==
 
 qlobber@^7.0.0:
   version "7.0.1"
@@ -775,6 +796,11 @@ ws@^3.2.0:
     async-limiter "~1.0.0"
     safe-buffer "~5.1.0"
     ultron "~1.1.0"
+
+ws@^7.5.0:
+  version "7.5.9"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.9.tgz#54fa7db29f4c7cec68b1ddd3a89de099942bb591"
+  integrity sha512-F+P9Jil7UiSKSkppIiD94dN07AwvFixvLIj1Og1Rl9GGMuNipJnV9JzjD6XuqmAeiswGvUmNLjr5cFuXwNS77Q==
 
 xtend@^4.0.0, xtend@^4.0.2:
   version "4.0.2"

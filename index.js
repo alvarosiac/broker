@@ -5,6 +5,6 @@ const port = process.env.PORT || 80;
 
 ws.createServer({ server: httpServer }, aedes.handle);
 
-httpServer.listen(port, (req, res) => {
-  res.send(`Puerto ${port}`);
+httpServer.listen(port, () => {
+  console.log("websocket server listening on port ", port);
 });
